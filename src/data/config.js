@@ -21,8 +21,7 @@ export const siteConfig = {
   },
 
   // ── Profile image ─────────────────────────────────────────
-  // Replace /fr-ley-portfolio/images/profile.jpg with your photo
-  profileImage: "/fr-ley-portfolio/images/profile.jpg",
+  profileImage: `${import.meta.env.BASE_URL}images/profile.jpg`,
 };
 
 // ============================================================
