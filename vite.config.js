@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// Change 'fr-ley-portfolio' to your actual GitHub repository name
+// Uses '/' for Vercel deployment, '/fr-ley-portfolio/' for GitHub Pages
 export default defineConfig({
   plugins: [react()],
-  base: '/fr-ley-portfolio/',
+  base: process.env.VERCEL ? '/' : '/fr-ley-portfolio/',
 })
